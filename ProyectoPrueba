@@ -1,0 +1,19 @@
+main.py
+word = input("Escribe un número del 0 al 5: ")
+
+try:
+    index = int(word)
+    if index < 0 or index > 5:
+        print("Número incorrecto, por favor reinicie el programa para comenzar de nuevo")
+    else:
+        meme_list = [
+            "LOL - una respuesta a algo gracioso",
+            "CRINGE - algo raro o embarazoso",
+            "ROFL - una respuesta a una broma",
+            "SHEESH - ligera desaprobación",
+            "CREEPY - aterrador, siniestro",
+            "AGGRO - ponerse agresivo/enojado"
+        ]
+        print(meme_list[index])
+except ValueError:
+    print("Entrada inválida. Por favor escribe un número del 0 al 5.")
