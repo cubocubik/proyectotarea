@@ -1,5 +1,5 @@
-import discord
-from discord.ext import commands
+import discord  # type: ignore
+from discord.ext import commands # type: ignore
 import random
 
 intents = discord.Intents.default()
@@ -42,6 +42,5 @@ async def on_member_join(member):
     if canal:
         await canal.send(f"👋 ¡Bienvenido/a {member.mention} al servidor!")
 
-bot.run("TU_TOKEN_AQUI")
-
+bot.run("MTM4OTc2OTgzMTQ0MzU5OTQ5MQ.GkNe7A.E828FLc8U64UTdFeOitw3qtpo9b3Jb6hDbs6H0")
 
